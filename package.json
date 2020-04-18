@@ -1,0 +1,27 @@
+{
+  "name": "minesweeper",
+  "version": "1.0.0",
+  "description": "minesweeper-game",
+  "main": "./backend/index.js",
+  "scripts": {
+    "start": "node ./backend/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanaivanovicc/matf-kurs.git"
+  },
+  "author": "Ivana Ivanovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanaivanovicc/matf-kurs/issues"
+  },
+  "homepage": "https://github.com/ivanaivanovicc/matf-kurs#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

@@ -1,0 +1,33 @@
+BODY {
+  background: #E9967A;
+  color: #800000;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+H1 {
+  text-align: center;
+  font-size: 40pt;
+  font-weight: normal;
+}
+#grid {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#grid TR TD{
+  border:1px solid white;
+  background: #FFE4C4;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+#grid TR TD.clicked {
+    background: #FFB6C1;
+}
+
+#grid TR TD.mine {
+    background: #800000;
+}
+
