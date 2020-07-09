@@ -1,13 +1,13 @@
 var grid = document.getElementById("grid");
 var gameOver=false;
-var testMode=true;
+var testMode=false;
 var d = new Date();
 var t1= d.getTime();
 
 
 // Ucitaj username korisnika
 function loadUsername() {
-    let person = prompt("Please enter your name", "Harry Potter");
+    let person = prompt("Please enter your name", "");
     let username = "";
 
     if (person == null || person == "") {
@@ -71,8 +71,8 @@ function checkLevelCompletion() {
     let user = loadUsername();
     d = new Date();
     var t2= d.getTime();
-    sendResult(user, 360-((t2-t1)/10000));
-    //getResult();
+    sendResult(user,Math.ceil ((3600-(t2-t1)/1000)/10));
+    //getResult()
     revealMines();
   }
 }

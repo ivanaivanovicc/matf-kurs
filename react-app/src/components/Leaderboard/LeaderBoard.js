@@ -13,7 +13,7 @@ class LeaderBoard extends React.Component {
 
   async fromMongo() {
     let results = await GetResults.getResults();
-    results = results.sort((a, b) => a.score < b.score);
+    results = results.sort((a, b) => a.score > b.score);
     this.setState({results:results});
   }
 
@@ -44,7 +44,7 @@ class LeaderBoard extends React.Component {
             <tr class="header">
               <th>POSITION</th>
               <th>USERNAME</th>
-              <th>SCORE (time)</th>
+              <th>SCORE</th>
               <th>TIME</th>
             </tr>
             </thead>
